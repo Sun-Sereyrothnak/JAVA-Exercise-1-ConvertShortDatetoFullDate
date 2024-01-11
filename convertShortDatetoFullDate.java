@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class convertShortDatetoFullDate {
 
-    private static String convertToMonthName(int month) {
-        String[] monthNames = {"", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-        return monthNames[month];
-    }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,5 +19,8 @@ public class convertShortDatetoFullDate {
         scanner.close();
     }
 
-
+    private static String convertToMonthName(int month) {
+        String[] monthNames = {"", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        return monthNames[month];
+    }
 }
